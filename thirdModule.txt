@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    string itemName;
+    int quantity;
+    float cost;
+    string supplier;
+
+    cout << "Enter item name: ";
+    cin >> itemName;
+    cout << "Enter quantity: ";
+    cin >> quantity;
+    cout << "Enter unit cost: ";
+    cin >> cost;
+    cout << "Enter supplier name: ";
+    cin >> supplier;
+
+    cout << "\n--- Inventory Report ---" << endl;
+    cout << "Item: " << itemName << endl;
+    cout << "Total Value: $" << (quantity * cost) << endl;
+    cout << "Supplier: " << supplier << endl;
+
+    return 0;
+}
