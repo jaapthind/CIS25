@@ -20,15 +20,23 @@ This repo is designated for storing all the text and cpp files from the CIS25 cl
 
   <img src="https://komarev.com/ghpvc/?username=JaapThind&color=brightgreen&style=for-the-badge" alt="Visitor Count" />
 
-  <br><br>
-
-  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Git.svg" width="60" />
-  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/VSCode.svg" width="60" />
-  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/CPP.svg" width="60" />
-  <img src="https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Python.svg" width="60" />
-
 </div>
 
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
 <br><br>
 <br><br>
 <br><br>
