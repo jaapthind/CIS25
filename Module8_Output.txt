@@ -1,0 +1,78 @@
+Module 8 OUTPUT
+
+
+
+
+Hospital Patient System
+1. Add Patient
+2. Display Patients
+3. Search Patient
+4. Update Patient
+5. Save Patients
+6. Exit
+Enter choice: 1
+Enter Patient ID: 1234
+Enter Name: Jaap
+Enter Age: 14
+Enter Gender: male
+Enter Diagnosis: broken arm
+Patient added successfully!
+
+Hospital Patient System
+1. Add Patient
+2. Display Patients
+3. Search Patient
+4. Update Patient
+5. Save Patients
+6. Exit
+Enter choice: 2
+
+--- Current Patient Records ---
+ID: 1234 | Name: Jaap | Age: 14 | Gender: male | Diagnosis: broken arm
+
+Hospital Patient System
+1. Add Patient
+2. Display Patients
+3. Search Patient
+4. Update Patient
+5. Save Patients
+6. Exit
+Enter choice: 3
+Enter patient ID to search: 1234
+
+Patient Found!
+Name: Jaap
+Age: 14
+Diagnosis: broken arm
+
+Hospital Patient System
+1. Add Patient
+2. Display Patients
+3. Search Patient
+4. Update Patient
+5. Save Patients
+6. Exit
+Enter choice: 4
+Enter patient ID to update: 1234
+Enter new diagnosis: coughing
+Diagnosis updated successfully!
+
+Hospital Patient System
+1. Add Patient
+2. Display Patients
+3. Search Patient
+4. Update Patient
+5. Save Patients
+6. Exit
+Enter choice: 5
+Patient records safely stored to patients.txt!
+
+Hospital Patient System
+1. Add Patient
+2. Display Patients
+3. Search Patient
+4. Update Patient
+5. Save Patients
+6. Exit
+Enter choice: 6
+Good Bye!

@@ -1,0 +1,72 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+// Class representing a Stadium with 5 clean fields from the sheet
+class Stadium {
+public:
+    string name;       // Column A
+    string capacity;   // Column B (Read as string so spaces never break it!)
+    string surface;    // Column D
+    string roofType;   // Column E
+    string yearOpened; // Column G
+};
+
+int main() {
+    ifstream inFile("nfl_stadiums.csv");
+    if (!inFile) {
+        cout << "Error: File not found!" << endl;
+        return 1;
+    }
+
+    Stadium nflLeague[40]; // Array to hold all rows
+    int count = 0;
+    string dummy;
+
+    // 1. Skip the header row at the top of the Excel sheet
+    getline(inFile, dummy);
+
+    // 2. Loop through every row until the end of the file (safely hits 10+ entries)
+    while (count < 40 && getline(inFile, nflLeague[count].name, ',')) {
+        
+        getline(inFile, nflLeague[count].capacity, ',');   // Read Column B
+        
+        // Safely skip Column C (Location) even if it has quotes/commas
+        if (inFile.peek() == '"') {
+            inFile.ignore(1); // skip opening quote
+            getline(inFile, dummy, '"'); // read to closing quote
+            inFile.ignore(1, ','); // skip the comma after quote
+        } else {
+            getline(inFile, dummy, ','); // regular skip
+        }
+
+        getline(inFile, nflLeague[count].surface, ',');    // Read Column D
+        getline(inFile, nflLeague[count].roofType, ',');   // Read Column E
+        getline(inFile, dummy, ',');                       // Skip Column F (Teams)
+        getline(inFile, nflLeague[count].yearOpened, '\n'); // Read Column G to end of line
+
+        count++;
+    }
+    inFile.close();
+
+    // 3. Neatly print all matching rows to fulfill the 10-row minimum
+    cout << "==========================================" << endl;
+    cout << "       NFL STADIUM DATASET (" << count << " LOADED)    " << endl;
+    cout << "==========================================" << endl;
+    
+    for (int i = 0; i < count; i++) {
+        cout << "\n[" << i + 1 << "] " << nflLeague[i].name << endl;
+        cout << "Capacity: " << nflLeague[i].capacity << " fans" << endl;
+        cout << "Surface : " << nflLeague[i].surface << endl;
+        cout << "Roof    : " << nflLeague[i].roofType << " | Opened: " << nflLeague[i].yearOpened << endl;
+        cout << "------------------------------------------" << endl;
+    }
+
+    return 0;
+}
+
+In case you are wondering, I used this dataset from Kaggle: https://www.kaggle.com/datasets/rusiano/nfl-stadiums 
+
+

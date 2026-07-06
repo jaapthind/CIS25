@@ -1,0 +1,85 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+// ==========================================
+// 1. BASE CLASS
+// ==========================================
+class User {
+protected:
+    std::string username;
+
+public:
+    // Constructor
+    User(std::string name) : username(name) {}
+
+    // Virtual destructor (good practice for base classes with virtual functions)
+    virtual ~User() {}
+
+    // Virtual function to describe access levels
+    virtual void accessLevel() const {
+        std::cout << "User: " << username << " has generic access." << std::endl;
+    }
+};
+
+// ==========================================
+// 2. DERIVED CLASSES
+// ==========================================
+
+// Employee Class
+class Employee : public User {
+public:
+    Employee(std::string name) : User(name) {}
+
+    // Overriding the accessLevel method
+    void accessLevel() const override {
+        std::cout << "Employee (" << username << ") Permissions: View inventory" << std::endl;
+    }
+};
+
+// Manager Class
+class Manager : public User {
+public:
+    Manager(std::string name) : User(name) {}
+
+    // Overriding the accessLevel method
+    void accessLevel() const override {
+        std::cout << "Manager (" << username << ") Permissions: View and update inventory" << std::endl;
+    }
+};
+
+// Admin Class
+class Admin : public User {
+public:
+    Admin(std::string name) : User(name) {}
+
+    // Overriding the accessLevel method
+    void accessLevel() const override {
+        std::cout << "Admin (" << username << ") Permissions: Full access: add, update, delete inventory" << std::endl;
+    }
+};
+
+// ==========================================
+// MAIN FUNCTION ( Polymorphism)
+// ==========================================
+int main() {
+    // Create instances of each role using base class pointers     std::vector<User*> users;
+
+    users.push_back(new Employee("Alice"));
+    users.push_back(new Manager("Bob"));
+    users.push_back(new Admin("Charlie"));
+
+    std::cout << "--- Role-Based Inventory System ---" << std::endl;
+    
+    // Iterate through the users and dynamically call the correct overridden function
+    for (const auto& user : users) {
+        user->accessLevel();
+    }
+
+    // Clean up dynamic memory
+    for (auto user : users) {
+        delete user;
+    }
+
+    return 0;
+}

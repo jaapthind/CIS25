@@ -1,0 +1,191 @@
+Module 7 Output 
+
+==========================================
+       NFL STADIUM DATASET (31 LOADED)    
+==========================================
+
+[1] Arrowhead Stadium
+Capacity: 76416.0 fans
+Surface : Bermuda grass
+Roof    : Open | Opened: 1972
+------------------------------------------
+
+[2] AT&T Stadium
+Capacity: 80000.0 fans
+Surface : Hellas Matrix Turf
+Roof    : Retractable | Opened: 2009
+------------------------------------------
+
+[3] Bank of America Stadium
+Capacity: 75523.0 fans
+Surface : Bermuda grass
+Roof    : Open | Opened: 1996
+------------------------------------------
+
+[4] CenturyLink Field
+Capacity: 69000.0 fans
+Surface : FieldTurf Revolution 360
+Roof    : Open | Opened: 2002
+------------------------------------------
+
+[5] Dignity Health Sports Park
+Capacity: 27000.0 fans
+Surface : Bermuda grass
+Roof    : Open | Opened: 2003
+------------------------------------------
+
+[6] Empower Field at Mile High
+Capacity: 76125.0 fans
+Surface : Kentucky bluegrass
+Roof    : Open | Opened: 2001
+------------------------------------------
+
+[7] FedExField
+Capacity: 82000.0 fans
+Surface : Bermuda grass
+Roof    : Open | Opened: 1997
+------------------------------------------
+
+[8] FirstEnergy Stadium
+Capacity: 67895.0 fans
+Surface : Kentucky bluegrass
+Roof    : Open | Opened: 1999
+------------------------------------------
+
+[9] Ford Field
+Capacity: 65000.0 fans
+Surface : FieldTurf Classic HD
+Roof    : Fixed | Opened: 2002
+------------------------------------------
+
+[10] Gillette Stadium
+Capacity: 66829.0 fans
+Surface : FieldTurf CORE
+Roof    : Open | Opened: 2002
+------------------------------------------
+
+[11] Hard Rock Stadium
+Capacity: 65326.0 fans
+Surface : Platinum TE Paspalum
+Roof    : Open | Opened: 1987
+------------------------------------------
+
+[12] Heinz Field
+Capacity: 68400.0 fans
+Surface : Kentucky bluegrass
+Roof    : Open | Opened: 2001
+------------------------------------------
+
+[13] Lambeau Field
+Capacity: 81441.0 fans
+Surface : Desso GrassMaster
+Roof    : Open | Opened: 1957
+------------------------------------------
+
+[14] Levi's Stadium
+Capacity: 68500.0 fans
+Surface : Bermuda grass / Perennial Ryegrass mixture
+Roof    : Open | Opened: 2014
+------------------------------------------
+
+[15] Lincoln Financial Field
+Capacity: 69596.0 fans
+Surface : Desso GrassMaster
+Roof    : Open | Opened: 2003
+------------------------------------------
+
+[16] Los Angeles Memorial Coliseum
+Capacity: 78500.0 fans
+Surface : Bermuda grass
+Roof    : Open | Opened: 1923
+------------------------------------------
+
+[17] Lucas Oil Stadium
+Capacity: 67000.0 fans
+Surface : Shaw Sports Momentum Pro
+Roof    : Retractable | Opened: 2008
+------------------------------------------
+
+[18] M&T Bank Stadium
+Capacity: 71008.0 fans
+Surface : Bermuda grass
+Roof    : Open | Opened: 1998
+------------------------------------------
+
+[19] Mercedes-Benz Superdome
+Capacity: 73208.0 fans
+Surface : FieldTurf Revolution 360
+Roof    : Fixed | Opened: 1975
+------------------------------------------
+
+[20] Mercedes-Benz Stadium
+Capacity: 71000.0 fans
+Surface : FieldTurf Revolution
+Roof    : Retractable | Opened: 2017
+------------------------------------------
+
+[21] MetLife Stadium
+Capacity: 82500.0 fans
+Surface : UBU Sports Speed Series S5-M Synthetic
+Roof    : Open | Opened: 2010
+------------------------------------------
+
+[22] New Era Field
+Capacity: 71608.0 fans
+Surface : A-Turf Titan 50
+Roof    : Open | Opened: 1973
+------------------------------------------
+
+[23] Nissan Stadium
+Capacity: 69143.0 fans
+Surface : Bermuda grass
+Roof    : Open | Opened: 1999
+------------------------------------------
+
+[24] NRG Stadium
+Capacity: 72220.0 fans
+Surface : Hellas Matrix Turf
+Roof    : Retractable | Opened: 2002
+------------------------------------------
+
+[25] Paul Brown Stadium
+Capacity: 65515.0 fans
+Surface : UBU Speed Series S5-M Synthetic Turf
+Roof    : Open | Opened: 2000
+------------------------------------------
+
+[26] Raymond James Stadium
+Capacity: 65890.0 fans
+Surface : Bermuda grass
+Roof    : Open | Opened: 1998
+------------------------------------------
+
+[27] RingCentral Coliseum
+Capacity: 56057.0 fans
+Surface : Bermuda grass
+Roof    : Open | Opened: 1966
+------------------------------------------
+
+[28] Soldier Field
+Capacity: 61500.0 fans
+Surface : Kentucky bluegrass
+Roof    : Open | Opened: 1924
+------------------------------------------
+
+[29] State Farm Stadium
+Capacity: 63400.0 fans
+Surface : Bermuda grass
+Roof    : Retractable | Opened: 2006
+------------------------------------------
+
+[30] TIAA Bank Field
+Capacity: 69132.0 fans
+Surface : Bermuda grass
+Roof    : Open | Opened: 1995
+------------------------------------------
+
+[31] U.S. Bank Stadium
+Capacity: 66655.0 fans
+Surface : UBU Speed Series S5-M Synthetic Turf
+Roof    : Fixed | Opened: 2016
+------------------------------------------

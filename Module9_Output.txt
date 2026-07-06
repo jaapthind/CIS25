@@ -1,0 +1,6 @@
+MODULE 9 OUTPUT
+
+--- Role-Based Inventory System ---
+Employee (Alice) Permissions: View inventory
+Manager (Bob) Permissions: View and update inventory
+Admin (Charlie) Permissions: Full access: add, update, delete inventory

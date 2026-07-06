@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float n1, n2, n3;
+
+    cout << "Enter three numbers: ";
+    // FIXED: Added cin to capture user input for n1, n2, and n3
+    cin >> n1 >> n2 >> n3;
+
+    // FIXED: added nested if statement to compare n1, n2, and n3
+    if (n1 >= n2) {
+        // FIXED: Nested check to see if n1 is also larger than n3
+        if (n1 >= n3) {
+            cout << "Largest number: " << n1;
+        }
+        else {
+            cout << "Largest number: " << n3;
+        }
+    }
+    else {
+        // FIXED: Nested check to see if n2 is larger than n3 if n1 was not the larges
+        //else-if statement
+        if (n2 >= n3) {
+            cout << "Largest number: " << n2;
+        }
+        else {
+            cout << "Largest number: " << n3;
+        }
+    }
+
+    return 0;
+}
+
+
+OUTPUT:  
+
+Enter three numbers: 5 9 88
+Largest number: 88

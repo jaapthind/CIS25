@@ -1,0 +1,90 @@
+#include <iostream>
+
+using namespace std;
+
+// Function Prototypes 
+void sayHello();
+void sayGoodbye();
+void displayTime();
+
+int main() {
+    int choice = 0;
+
+    // Loop 
+    while (choice != 4) {
+        cout << "\n--- Main Menu ---\n";
+        cout << "1. Say Hello\n2. Say Goodbye\n3. Display Time\n4. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        if (choice == 1) {
+            sayHello();
+        }
+        else if (choice == 2) {
+            sayGoodbye();
+        }
+        else if (choice == 3) {
+            displayTime();
+        }
+        else if (choice == 4) {
+            cout << "Exiting program." << endl;
+        }
+        else {
+            cout << "Invalid choice, please try again." << endl;
+        }
+    }
+
+    return 0;
+}
+
+void sayHello() {
+    cout << ">> Hello there!" << endl;
+}
+
+void sayGoodbye() {
+    cout << ">> Goodbye, see you later!" << endl;
+}
+
+void displayTime() {
+    cout << ">> It is currently time to learn C++!" << endl;
+}
+
+
+
+OUTPUT:
+
+--- Main Menu ---
+1. Say Hello
+2. Say Goodbye
+3. Display Time
+4. Exit
+Enter your choice: 1
+>> Hello there!
+
+--- Main Menu ---
+1. Say Hello
+2. Say Goodbye
+3. Display Time
+4. Exit
+Enter your choice: 2
+>> Goodbye, see you later!
+
+--- Main Menu ---
+1. Say Hello
+2. Say Goodbye
+3. Display Time
+4. Exit
+Enter your choice: 3
+>> It is currently time to learn C++!
+
+--- Main Menu ---
+1. Say Hello
+2. Say Goodbye
+3. Display Time
+4. Exit
+Enter your choice: 4
+Exiting program.
+
+--------------------------------
+Process exited after 9.814 seconds with return value 0
+Press any key to continue . . .

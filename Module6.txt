@@ -1,0 +1,136 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std;
+
+class Item {
+public:
+    string name;
+    double price;
+    int quantity;
+
+    double getTotalPrice() const {
+        return price * quantity;
+    }
+};
+
+int main() {
+    int choice = 0;
+
+    while (choice != 3) {
+        cout << "\n===== SHOPPING CART MENU =====" << endl;
+        cout << "1. Add item to cart" << endl;
+        cout << "2. View checkout" << endl;
+        cout << "3. Exit" << endl;
+        cout << "Choose an option: ";
+        
+        // If they type a letter for the menu, reset cin and skip
+        if (!(cin >> choice)) {
+            cout << "Invalid input! Please enter a number." << endl;
+            cin.clear();
+            cin.ignore(1000, '\n');
+            continue;
+        }
+
+        if (choice == 1) {
+            Item newItem;
+
+            cout << "Enter item name (no spaces): ";
+            cin >> newItem.name;
+
+            cout << "Enter item price: ";
+            while (!(cin >> newItem.price)) {
+                cout << "Invalid price! Enter a number: ";
+                cin.clear();
+                cin.ignore(1000, '\n');
+            }
+
+            cout << "Enter item quantity: ";
+            while (!(cin >> newItem.quantity)) {
+                cout << "Invalid quantity! Enter a whole number: ";
+                cin.clear();
+                cin.ignore(1000, '\n');
+            }
+
+            ofstream outFile("cart.txt", ios::app);
+            if (outFile.is_open()) {
+                outFile << newItem.name << " " << newItem.price << " " << newItem.quantity << endl;
+                outFile.close();
+                cout << "Item added to cart." << endl;
+            }
+        }
+        else if (choice == 2) {
+            ifstream inFile("cart.txt");
+            if (!inFile) {
+                cout << "Cart is empty or file not found." << endl;
+                continue;
+            }
+
+            double grandTotal = 0.0;
+            string name;
+            double price;
+            int quantity;
+
+            cout << "\n===== CHECKOUT =====" << endl;
+            
+            // Clean read tracking to prevent printing garbage memory variables
+            while (inFile >> name >> price >> quantity) {
+                Item temp;
+                temp.name = name;
+                temp.price = price;
+                temp.quantity = quantity;
+
+                double itemTotal = temp.getTotalPrice();
+                cout << temp.name << " - $" << temp.price << " x " << temp.quantity
+                     << " = $" << itemTotal << endl;
+                grandTotal += itemTotal;
+            }
+            
+            cout << "--------------------" << endl;
+            cout << "Total: $" << grandTotal << endl;
+            inFile.close();
+        }
+        else if (choice == 3) {
+            cout << "Thank you for shopping!" << endl;
+        }
+        else {
+            cout << "Invalid option, please try again." << endl;
+        }
+    }
+
+    return 0;
+}
+
+
+OUTPUT: 
+
+
+
+===== SHOPPING CART MENU =====
+1. Add item to cart
+2. View checkout
+3. Exit
+Choose an option: 1
+Enter item name (no spaces): banana
+Enter item price: 1.23
+Enter item quantity: 3
+Item added to cart.
+
+===== SHOPPING CART MENU =====
+1. Add item to cart
+2. View checkout
+3. Exit
+Choose an option: 2
+
+===== CHECKOUT =====
+banana - $1.23 x 3 = $3.69
+--------------------
+Total: $3.69
+
+===== SHOPPING CART MENU =====
+1. Add item to cart
+2. View checkout
+3. Exit
+Choose an option: 3
+Thank you for shopping!

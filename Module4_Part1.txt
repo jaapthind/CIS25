@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int choice;
+
+    cout << "--- Main Menu ---" << endl;
+    cout << "1. Print 'Hello'" << endl;
+    cout << "2. Print 'Goodbye'" << endl;
+    cout << "Enter selection (1 or 2): ";
+    cin >> choice;
+
+
+    //IF statments
+
+    if (choice == 1) {
+        cout << "Hello! Welcome to the menu." << endl;
+    }
+    else if (choice == 2) {
+        cout << "Goodbye! Have a great day." << endl;
+    }
+    else {
+        cout << "Invalid selection. Please run the program again." << endl;
+    }
+
+    return 0;
+}
+
+
+
+
+Output: 
+
+--- Main Menu ---
+1. Print 'Hello'
+2. Print 'Goodbye'
+Enter selection (1 or 2): 1
+Hello! Welcome to the menu.
+
+
+
+
+--- Main Menu ---
+1. Print 'Hello'
+2. Print 'Goodbye'
+Enter selection (1 or 2): 2
+Goodbye! Have a great day.
