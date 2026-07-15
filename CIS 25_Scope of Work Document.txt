@@ -1,0 +1,21 @@
+﻿:::: Scope of Work Document
+
+
+Scope of Work (SOW) -
+Build an application or add a unique twist on a common application. The application can be a game, a business support program, or robot to give a few examples. Projects should focus on creating C++ or Swift applications that utilize long-term data storage.
+Please submit your Scope of Work Document detailing the application you plan to complete.   You last assignment will implement your plan
+Student Project – Scope of Work (SOW)
+Project Title: Retro Habit & Productivity Tracker 
+Student Name: Jaap Thind 
+Date: July 14, 2026
+________________
+
+
+1. Project Overview
+This project is a text-based productivity app built in C++ that turns real-life tasks into a game. Users earn experience points and level up a character profile when they complete their daily goals. The application saves all character stats and habits to local text files so the data isn't lost when the app closes. 
+2. Features
+* Text-Based Main Menu: A simple terminal screen that displays character stats (Level, XP, and Gold) and a list of active habits.
+* Habit Management: Ability to add new habits, edit existing ones, and delete completed tasks.
+* Leveling System: Logic that rewards the player with experience points and levels them up as they complete goals.
+* Character Data Saving: Long-term storage using a text file (user_profile.txt) to save the user's level, XP, and gold when they quit.
+* Habit List Saving: Long-term storage using a text file (habits.txt) that automatically saves active habits and loads them back in when the app starts.
